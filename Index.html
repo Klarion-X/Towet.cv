@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleb Kiptoo - CV</title>
+    <style>
+        /* Modern CSS Reset */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #ffffff; 
+            padding: 40px; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+
+        /* Typography & Headings */
+        h1 { 
+            font-size: 2.8rem; 
+            color: #2c3e50; 
+            margin-bottom: 0.5rem; 
+            font-weight: 700;
+        }
+        
+        h2 { 
+            font-size: 1.5rem; 
+            color: #3498db; 
+            border-bottom: 2px solid #3498db; 
+            padding-bottom: 0.5rem; 
+            margin: 2rem 0 1.2rem 0; 
+            font-weight: 600;
+        }
+        
+        h3 { 
+            font-size: 1.2rem; 
+            color: #2c3e50; 
+            margin-bottom: 0.5rem; 
+            font-weight: 600;
+        }
+        
+        p { 
+            margin-bottom: 1rem; 
+            font-size: 1rem;
+        }
+        
+        ul { 
+            list-style-type: none; 
+            margin-bottom: 1.5rem; 
+        }
+        
+        li { 
+            margin-bottom: 0.6rem; 
+            padding-left: 1.2rem;
+            position: relative;
+        }
+        
+        li:before { 
+            content: "•"; 
+            color: #3498db; 
+            font-weight: bold; 
+            position: absolute;
+            left: 0;
+        }
+
+        /* Layout */
+        .container { 
+            display: grid; 
+            grid-template-columns: 2fr 1fr; 
+            gap: 2.5rem; 
+        }
+        
+        .header { 
+            grid-column: 1 / -1; 
+            text-align: center; 
+            margin-bottom: 2rem; 
+        }
+        
+        .contact-info { 
+            display: flex; 
+            justify-content: center; 
+            gap: 2rem; 
+            flex-wrap: wrap; 
+            margin-bottom: 1.5rem; 
+            font-size: 1rem; 
+        }
+        
+        .main-content {  }
+        
+        .sidebar { 
+            background: #f8f9fa; 
+            padding: 1.8rem; 
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Sections */
+        .section { 
+            margin-bottom: 2rem; 
+        }
+        
+        .job, .project { 
+            margin-bottom: 1.5rem; 
+        }
+
+        /* Utilities */
+        .date { 
+            font-style: italic; 
+            color: #7f8c8d; 
+            font-size: 0.95rem; 
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .icon { 
+            margin-right: 0.5rem; 
+            color: #3498db; 
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            body {
+                padding: 20px;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Caleb Kiptoo</h1>
+        <div class="contact-info">
+            <span>📞 0769 998 482</span>
+            <span>✉️ towettcaleb2@gmail.com</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <section class="section">
+                <h2>Professional Summary</h2>
+                <p>Results-driven ICT Officer with a strong academic background in Computer Security and Forensics, experienced in ICT systems management, digital forensics, and secure data solutions. Recognized for leadership and community service through Kenya Red Cross and Peace Ambassadors Kenya. Seeking to apply technical expertise, problem-solving, and organizational leadership to contribute to dynamic ICT roles.</p>
+            </section>
+
+            <section class="section">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <h3>ICT Officer</h3>
+                    <span class="date">County Government of Nandi | 2023 – 2024</span>
+                    <ul>
+                        <li>Managed ICT infrastructure, ensuring security and reliability.</li>
+                        <li>Supported digital record management and data protection initiatives.</li>
+                        <li>Provided technical assistance and troubleshooting to staff.</li>
+                        <li>Coordinated ICT projects that enhanced system efficiency and service delivery.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Credit Card Fraud Detection System</h3>
+                    <ul>
+                        <li><strong>Tools/Methods:</strong> Data analysis & machine learning models.</li>
+                        <li><strong>Impact:</strong> Increased fraud detection accuracy and provided a scalable framework for financial institutions.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Education</h2>
+                <h3>Bachelor of Science in Computer Security and Forensics</h3>
+                <span class="date">Kabarak University | 2019 – 2023</span>
+                <p>Chair, Peace Ambassadors Kenya</p>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <section class="section">
+                <h2>Skills</h2>
+                <h3>Technical</h3>
+                <p>Network Security, Digital Forensics, Database Management, ICT Infrastructure, Data Analysis, System Administration, Troubleshooting.</p>
+                <h3>Soft Skills</h3>
+                <p>Leadership, Teamwork, Strategic Problem-Solving, Communication, Community Engagement.</p>
+            </section>
+
+            <section class="section">
+                <h2>Certifications</h2>
+                <p>Member – Association of Computing Practitioners Kenya (ACPK)</p>
+                <p>Life Member & Board Member – Kenya Red Cross (KRC)</p>
+            </section>
+
+            <section class="section">
+                <h2>Leadership</h2>
+                <p>Chair, Peace Ambassadors Kenya – Led university-level peacebuilding initiatives and awareness programs.</p>
+                <p>Board Member, Kenya Red Cross – Contributed to governance, humanitarian outreach, and disaster response.</p>
+            </section>
+
+            <section class="section">
+                <h2>Languages</h2>
+                <p>English – Fluent</p>
+                <p>Kiswahili – Fluent</p>
+            </section>
+
+            <section class="section">
+                <h2>Interests</h2>
+                <p>Cybersecurity research & tech innovation</p>
+                <p>Volunteering & humanitarian service</p>
+                <p>Reading & youth mentorship</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
